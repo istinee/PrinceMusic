@@ -51,12 +51,12 @@
 - `/reload` - refresh adminlist
 
 #### Owner & Sudo only
-- `/rebootmusic` - restart asuna music
+- `/rebootmusic` - restart yui music
 - `/gcast` - global cast to all users
 
 ### Deploy To Heroku</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/zYxDevs/AsunaSmartMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aryazakaria01/YuiMusic)
 
 Use [Repl Link](https://replit.com/@YogaPranata1/PyroStringGen) to get pyrogram string session
 
@@ -67,3 +67,5 @@ Use [Repl Link](https://replit.com/@YogaPranata1/PyroStringGen) to get pyrogram 
 - [Original Repo](https://github.com/suprojects/CallsMusic)
 - [Oda Nobunaga](https://t.me/OdaRobot): Bot
 - [Asuna Yuuki](https://t.me/YogaWaifuBot): Bot
+- [aryazakaria01](https://github.com/aryazakaria01): Second Editor
+- [Yui Oregairu](https://t.me/YuiiDev_bot): Bot
