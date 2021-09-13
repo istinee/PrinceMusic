@@ -1,4 +1,4 @@
-<h2 align="centre">Yui Music Player 🎵</h2>
+<h2 align="centre">Prince Music Player 🎵</h2>
 
 ### A bot that can play music on telegram group's voice call
 ##
@@ -51,12 +51,12 @@
 - `/reload` - refresh adminlist
 
 #### Owner & Sudo only
-- `/rebootmusic` - restart yui music
+- `/rebootmusic` - restart prince music
 - `/gcast` - global cast to all users
 
 ### Deploy To Heroku</h4>
 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/aryazakaria01/YuiMusic)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/istinee/PrinceMusic)
 
 Use [Repl Link](https://replit.com/@YogaPranata1/PyroStringGen) to get pyrogram string session
 
@@ -69,3 +69,5 @@ Use [Repl Link](https://replit.com/@YogaPranata1/PyroStringGen) to get pyrogram 
 - [Asuna Yuuki](https://t.me/YogaWaifuBot): Bot
 - [aryazakaria01](https://github.com/aryazakaria01): Second Editor
 - [Yui Oregairu](https://t.me/YuiiDev_bot): Bot
+- [istinee](https://github.com/istinee): Third Editor
+- [Prince](https://t.me/Wsc_idn_bot): Bot
