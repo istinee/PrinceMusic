@@ -52,16 +52,15 @@ def changeImageSize(maxWidth, maxHeight, image):
     newImage = image.resize((newWidth, newHeight))
     return newImage
 
-async def generate_cover(requested_by, title, views, duration, thumbnail):
+async def generate_cover(title, thumbnail):
     async with aiohttp.ClientSession() as session:
         async with session.get(thumbnail) as resp:
             if resp.status == 200:
                 f = await aiofiles.open("background.png", mode="wb")
                 await f.write(await resp.read())
                 await f.close()
-
     image1 = Image.open("./background.png")
-    image2 = Image.open("etc/150403.png")
+    image2 = Image.open("etc/foreground.png")
     image3 = changeImageSize(1280, 720, image1)
     image4 = changeImageSize(1280, 720, image2)
     image5 = image3.convert("RGBA")
@@ -69,17 +68,9 @@ async def generate_cover(requested_by, title, views, duration, thumbnail):
     Image.alpha_composite(image5, image6).save("temp.png")
     img = Image.open("temp.png")
     draw = ImageDraw.Draw(img)
-    font = ImageFont.truetype("etc/font.otf", 32)
-    draw.text((190, 550), f"Title: {title}", (255, 255, 255), font=font)
-    draw.text(
-        (190, 590), f"Duration: {duration}", (255, 255, 255), font=font
-    )
-    draw.text((190, 630), f"Views: {views}", (255, 255, 255), font=font)
-    draw.text((190, 670),
-        f"Added By: {requested_by}",
-        (255, 255, 255),
-        font=font,
-    )
+    font = ImageFont.truetype("etc/font.otf", 60)
+    draw.text((40, 550), f"Playing here....", (0, 0, 0), font=font)
+    draw.text((40, 630), f"{title}", (0, 0, 0), font=font)
     img.save("final.png")
     os.remove("temp.png")
     os.remove("background.png")
@@ -187,7 +178,7 @@ async def play(_, message: Message):
 
         file_name = get_file_name(audio)
         title = file_name
-        thumb_name = "https://telegra.ph/file/c4b7a21a33e9364f87eee.png"
+        thumb_name = "https://telegra.ph/file/6790864f5fe27471bdc8d.png"
         thumbnail = thumb_name
         duration = round(audio.duration / 60)
         views = "Locally added"
@@ -254,7 +245,7 @@ async def play(_, message: Message):
             )
         except Exception as e:
             title = "NaN"
-            thumb_name = "https://telegra.ph/file/c4b7a21a33e9364f87eee.png"
+            thumb_name = "https://telegra.ph/file/6790864f5fe27471bdc8d.png"
             duration = "NaN"
             views = "NaN"
             keyboard = InlineKeyboardMarkup(
