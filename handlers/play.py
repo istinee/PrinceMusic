@@ -135,7 +135,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "@JinakuShibagen"
+        user.first_name = "@PrinceAssistant"
     usar = user
     wew = usar.id
     try:
@@ -153,7 +153,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Yui Oregairu assistant joined this group for play music 🎵**")
+                        message.chat.id, "**Prince assistant joined this group for play music 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -164,7 +164,7 @@ async def play(_, message: Message):
         await USER.get_chat(chid)
     except:
         await lel.edit(
-            f"<i>Hey {user.first_name}, Asuna Smart AI is not in this chat, ask admin to send /play command for first time to add it.</i>")
+            f"<i>Hey {user.first_name}, Prince Assistant is not in this chat, ask admin to send /play command for first time to add it.</i>")
         return
     
     audio = (message.reply_to_message.audio or message.reply_to_message.voice) if message.reply_to_message else None
