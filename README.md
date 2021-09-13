@@ -1,4 +1,4 @@
-<h2 align="centre">Asuna Music Player 🎵</h2>
+<h2 align="centre">Yui Music Player 🎵</h2>
 
 ### A bot that can play music on telegram group's voice call
 ##
