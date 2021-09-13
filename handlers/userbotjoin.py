@@ -22,13 +22,13 @@ async def addchannel(client, message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "@AsunaSmartAI"
+        user.first_name = "@JinakuShibagen"
     try:
         await USER.join_chat(invitelink)
         await USER.send_message(message.chat.id, "🤖: I'm joined here for playing music on voice chat")
     except UserAlreadyParticipant:
         await message.reply_text(
-            f"<b>{user.first_name} Allready join this Group</b>",
+            f"<b>{user.first_name} Already join this Group</b>",
         )
 #
         return
@@ -49,7 +49,7 @@ async def addchannel(client, message):
 @authorized_users_only
 async def rem(USER, message):
     try:
-        await USER.send_message(message.chat.id, "🤖: I'm leaving now, goodbye everyone😭. Join @SpreadNetworks for support.")
+        await USER.send_message(message.chat.id, "🤖: I'm leaving now, goodbye everyone 😭. Join @CyberSupportGroup and @CyberMusicProject for support.")
         await USER.leave_chat(message.chat.id)
     except:
         await message.reply_text(
