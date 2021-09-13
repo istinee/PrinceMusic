@@ -7,11 +7,11 @@ from helpers.filters import other_filters2
 
 @Client.on_message(other_filters2)
 async def start(_, message: Message):
-#    await message.reply_sticker("CAACAgUAAx0CVEgMTAACE81hCsnWvf_ao9aBzJAhgUX08F9MBgAC7wEAAl7AKFSrtnT4_eRctSAE")
+#    await message.reply_sticker("CAACAgIAAx0CTRfw5AADSmE-3xuR1h7mihItkxca6ipxHkbdAALWCwACzL-4SIbwBg91W5G1IAQ")
     await message.reply_text(
-        f"""**👋🏻 Hello, My name is {yoga} ✨
+        f"""**👋🏻 Hello, My name is {arya} ✨
 
-Powered by [Yoga Pranata](https://t.me/zYxDx).
+Powered by [Arya Zakaria](https://t.me/Badboyanim).
 
 Want play music on vcg?, add me to your group.**
         """,
@@ -22,14 +22,14 @@ Want play music on vcg?, add me to your group.**
                         "➕ Add Me To Your Group ➕", url="https://t.me/{BOT_USERNAME}?startgroup=true")
                   ],[
                     InlineKeyboardButton(
-                        "🚨 Support 🚨", url="https://t.me/YBotsSupport"
+                        "🚨 Support 🚨", url="https://t.me/CyberSupportGroup"
                     ),
                     InlineKeyboardButton(
-                        "🔊 Updates 🔊", url="https://t.me/SpreadNetworks"
+                        "🔊 Updates 🔊", url="https://t.me/CyberMusicProject"
                     )
                 ],[ 
                     InlineKeyboardButton(
-                        "🎁 Donation", url="https://paypal.me/YogaPranataDMK"
+                        "🎁 Donation", url="https://t.me/Badboyanim"
                     )]
             ]
         ),
@@ -43,11 +43,11 @@ async def gstart(_, message: Message):
             [
                 [   
                     InlineKeyboardButton(
-                        "🚨 Supports", url="https://t.me/YBotsSupport"),
+                        "🚨 Supports", url="https://t.me/CyberSupportGroup"),
                     InlineKeyboardButton(
-                        "Updates 🔊", url="https://t.me/SpreadNetworks")
+                        "Updates 🔊", url="https://t.me/CyberMusicProject")
                 ],[ 
-                    InlineKeyboardButton("Developer", url="https.t.me/Yoga_CIC")
+                    InlineKeyboardButton("Developer", url="https.t.me/Badboyanim")
                 ]
             ]
         )
@@ -60,11 +60,11 @@ async def helptext(_, message: Message):
             [
                 [   
                     InlineKeyboardButton(
-                        "🚨 Supports", url="https://t.me/YBotsSupport"),
+                        "🚨 Supports", url="https://t.me/CyberSupportGroup"),
                     InlineKeyboardButton(
-                        "Updates 🔊", url="https://t.me/SpreadNetworks")
+                        "Updates 🔊", url="https://t.me/CyberMusicProject")
                 ],[ 
-                    InlineKeyboardButton("Developer", url="https.t.me/Yoga_CIC")
+                    InlineKeyboardButton("Developer", url="https.t.me/Badboyanim")
                 ]
             ]
         )
@@ -72,16 +72,16 @@ async def helptext(_, message: Message):
 
 @Client.on_message(filters.command(["about", f"about@{BOT_USERNAME}"]) & ~filters.private & ~filters.channel)
 async def about(_, message: Message):
-      await message.reply_text("""**Run on [Heroku](https://heroku.com)\nLibrary [Pyrogram](https://docs.pyrogram.org)\nWith [Pytgcalls](https://github.com/pytgcalls/pytgcalls)\nDevelopers:\n• [Yoga Pranata](https://github.com/zYxDevs)\n• [Ihsan](https://github.com/UserLazy)**""",
+      await message.reply_text("""**Run on [Heroku](https://heroku.com)\nLibrary [Pyrogram](https://docs.pyrogram.org)\nWith [Pytgcalls](https://github.com/pytgcalls/pytgcalls)\nDevelopers:\n• [Yoga Pranata](https://github.com/zYxDevs)\n• [Ihsan](https://github.com/UserLazy)\n• [Arya](https://github.com/aryazakaria01)**""",
       reply_markup=InlineKeyboardMarkup(
             [
                 [   
                     InlineKeyboardButton(
-                        "🚨 Supports", url="https://t.me/YBotsSupport"),
+                        "🚨 Supports", url="https://t.me/CyberSupportGroup"),
                     InlineKeyboardButton(
-                        "Updates 🔊", url="https://t.me/SpreadNetworks")
+                        "Updates 🔊", url="https://t.me/CyberMusicProject")
                 ],[ 
-                    InlineKeyboardButton("Developer", url="https.t.me/Yoga_CIC")
+                    InlineKeyboardButton("Developer", url="https.t.me/Badboyanim")
                 ]
             ]
         )
