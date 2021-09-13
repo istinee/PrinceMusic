@@ -144,7 +144,7 @@ async def play(_, message: Message):
     try:
         user = await USER.get_me()
     except:
-        user.first_name = "@AsunaSmartAI"
+        user.first_name = "@JinakuShibagen"
     usar = user
     wew = usar.id
     try:
@@ -162,7 +162,7 @@ async def play(_, message: Message):
                 try:
                     await USER.join_chat(invitelink)
                     await USER.send_message(
-                        message.chat.id, "**Asuna Smart AI assistant joined this group for play music 🎵**")
+                        message.chat.id, "**Yui Oregairu assistant joined this group for play music 🎵**")
 
                 except UserAlreadyParticipant:
                     pass
@@ -197,10 +197,10 @@ async def play(_, message: Message):
                 [
                     InlineKeyboardButton(
                         text="🚨 Support",
-                        url=f"https://t.me/YBotsSupport"),
+                        url=f"https://t.me/CyberSupportGroup"),
                     InlineKeyboardButton(
                         text="Channel 🔊",
-                        url="https://t.me/SpreadNetworks")                
+                        url="https://t.me/CyberMusicProject")                
                 ]
             ]
         )
@@ -237,10 +237,10 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="🚨 Support",
-                            url=f"https://t.me/YBotsSupport"),
+                            url=f"https://t.me/CyberSupportGroup"),
                         InlineKeyboardButton(
                             text="Updates 📡",
-                            url=f"https://t.me/SpreadNetworks"),
+                            url=f"https://t.me/CyberMusicProject"),
                     ],
                     [
                         InlineKeyboardButton(
@@ -275,7 +275,7 @@ async def play(_, message: Message):
         file_path = await converter.convert(youtube.download(url))
     else:
         if len(message.command) < 2:
-            return await lel.edit("🧐 **What's the song you want to play?\nExample » /play alone\n\nSupport : @YBotsSupport**")
+            return await lel.edit("🧐 **What's the song you want to play?\nExample » /play alone\n\nSupport : @CyberSupportGroup**")
         await lel.edit("🔎 **Finding the song...**")
         query = message.text.split(None, 1)[1]
         # print(query)
@@ -312,10 +312,10 @@ async def play(_, message: Message):
                     [
                         InlineKeyboardButton(
                             text="🚨 Support",
-                            url=f"https://t.me/YBotsSupport"),
+                            url=f"https://t.me/CyberSupportGroup"),
                         InlineKeyboardButton(
                             text="Updates 📡",
-                            url=f"https://t.me/SpreadNetworks"),
+                            url=f"https://t.me/CyberMusicProject"),
                     ],
                     [
                         InlineKeyboardButton(
